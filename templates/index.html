@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP Trainer</title>
+</head>
+<body>
+    <h1>Train Your MLP Model</h1>
+    <form method="POST">
+        <label for="xs">Input Samples (e.g., 2.0,3.0; 3.0,-1.0; 2.0,4.0):</label><br>
+        <input type="text" id="xs" name="xs" required><br><br>
+
+        <label for="ys">Labels (e.g., 1.0,-1.0,1.0):</label><br>
+        <input type="text" id="ys" name="ys" required><br><br>
+
+        <label for="layers">Hidden Layer Sizes (e.g., 4,8,4):</label><br>
+        <input type="text" id="layers" name="layers" required><br><br>
+
+        <label for="steps">Number of Training Steps:</label><br>
+        <input type="number" id="steps" name="steps" required><br><br>
+
+        <label for="learning_rate">Learning Rate:</label><br>
+        <input type="text" id="learning_rate" name="learning_rate" required><br><br>
+
+        <button type="submit">Train Model</button>
+    </form>
+</body>
+</html>

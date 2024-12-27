@@ -1,0 +1,86 @@
+digraph {
+	graph [rankdir=LR]
+	4786526240 [label="{  | data -0.9965 | grad -0.0010}" color=blue fillcolor=white shape=record style=filled]
+	"4786526240tanh" [label=tanh]
+	"4786526240tanh" -> 4786526240
+	4786436288 [label="{  | data -5.2783 | grad -0.0004}" color=blue fillcolor=white shape=record style=filled]
+	"4786436288+" [label="+"]
+	"4786436288+" -> 4786436288
+	4786526528 [label="{  | data 0.1146 | grad 0.0002}" color=blue fillcolor=white shape=record style=filled]
+	"4786526528*" [label="*"]
+	"4786526528*" -> 4786526528
+	4786526720 [label="{  | data 0.3449 | grad 0.0002}" color=blue fillcolor=white shape=record style=filled]
+	"4786526720+" [label="+"]
+	"4786526720+" -> 4786526720
+	4786526912 [label="{  | data -0.4500 | grad 0.0002}" color=blue fillcolor=white shape=record style=filled]
+	"4786526912*" [label="*"]
+	"4786526912*" -> 4786526912
+	4786527104 [label="{  | data -0.1051 | grad 0.0002}" color=blue fillcolor=white shape=record style=filled]
+	"4786527104+" [label="+"]
+	"4786527104+" -> 4786527104
+	4786437056 [label="{  | data -0.9999 | grad -3.9999}" color=blue fillcolor=white shape=record style=filled]
+	"4786437056tanh" [label=tanh]
+	"4786437056tanh" -> 4786437056
+	4786527200 [label="{  | data -0.1047 | grad 0.0002}" color=blue fillcolor=white shape=record style=filled]
+	"4786527200tanh" [label=tanh]
+	"4786527200tanh" -> 4786527200
+	4786423040 [label="{ input | data 2.0000 | grad -0.0047}" color=green fillcolor=green shape=record style=filled]
+	4786527488 [label="{  | data -2.3801 | grad -0.0004}" color=blue fillcolor=white shape=record style=filled]
+	"4786527488*" [label="*"]
+	"4786527488*" -> 4786527488
+	4786423088 [label="{ input | data 3.0000 | grad -0.0039}" color=green fillcolor=green shape=record style=filled]
+	4786525568 [label="{  | data -1.2097 | grad -0.0000}" color=blue fillcolor=white shape=record style=filled]
+	"4786525568*" [label="*"]
+	"4786525568*" -> 4786525568
+	4786423184 [label="{ weight | data -0.6056 | grad -0.0076}" color=red fillcolor=red shape=record style=filled]
+	4786527680 [label="{  | data -5.3381 | grad -0.0004}" color=blue fillcolor=white shape=record style=filled]
+	"4786527680+" [label="+"]
+	"4786527680+" -> 4786527680
+	4786423232 [label="{ bias | data 0.4360 | grad -0.0038}" color=yellow fillcolor=yellow shape=record style=filled]
+	4786423280 [label="{ weight | data -0.8026 | grad -0.0115}" color=red fillcolor=red shape=record style=filled]
+	4786525760 [label="{  | data -0.7733 | grad -0.0000}" color=blue fillcolor=white shape=record style=filled]
+	"4786525760+" [label="+"]
+	"4786525760+" -> 4786525760
+	4786423376 [label="{ weight | data 0.0542 | grad -0.0304}" color=red fillcolor=red shape=record style=filled]
+	4786435712 [label="{  | data 0.0598 | grad -0.0004}" color=blue fillcolor=white shape=record style=filled]
+	"4786435712*" [label="*"]
+	"4786435712*" -> 4786435712
+	4786423424 [label="{ bias | data 0.2288 | grad -0.0152}" color=yellow fillcolor=yellow shape=record style=filled]
+	4786423472 [label="{ weight | data -0.1546 | grad -0.0457}" color=red fillcolor=red shape=record style=filled]
+	4786525952 [label="{  | data -2.4042 | grad -0.0000}" color=blue fillcolor=white shape=record style=filled]
+	"4786525952*" [label="*"]
+	"4786525952*" -> 4786525952
+	4786423616 [label="{ weight | data 2.8456 | grad 4.5716}" color=red fillcolor=red shape=record style=filled]
+	4786423664 [label="{ bias | data -3.4168 | grad -4.5882}" color=yellow fillcolor=yellow shape=record style=filled]
+	4786423712 [label="{ weight | data -0.6821 | grad -1.1082}" color=red fillcolor=red shape=record style=filled]
+	4786526144 [label="{  | data -3.1775 | grad -0.0000}" color=blue fillcolor=white shape=record style=filled]
+	"4786526144+" [label="+"]
+	"4786526144+" -> 4786526144
+	4786526240 -> "4786527488*"
+	4786423040 -> "4786525568*"
+	4786423184 -> "4786525568*"
+	4786436288 -> "4786437056tanh"
+	4786527200 -> "4786435712*"
+	4786435712 -> "4786436288+"
+	4786423088 -> "4786526912*"
+	4786423472 -> "4786526912*"
+	4786423280 -> "4786525952*"
+	4786525760 -> "4786526144+"
+	4786423616 -> "4786527488*"
+	4786526720 -> "4786527104+"
+	4786423040 -> "4786526528*"
+	4786527104 -> "4786527200tanh"
+	4786526144 -> "4786526240tanh"
+	4786525568 -> "4786525760+"
+	4786423424 -> "4786526720+"
+	4786527680 -> "4786436288+"
+	4786423232 -> "4786525760+"
+	4786527488 -> "4786527680+"
+	4786526528 -> "4786526720+"
+	4786423088 -> "4786525952*"
+	4786423712 -> "4786435712*"
+	4786525952 -> "4786526144+"
+	4786526912 -> "4786527104+"
+	4786423376 -> "4786526528*"
+	4786423664 -> "4786527680+"
+}
