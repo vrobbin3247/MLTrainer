@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "MLTrainer/app.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "MLTrainer/app.py"
+         }
+     ]
+ }
